@@ -1,64 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- Network & AdMob permissions -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-
-    <!-- Permissions for local storage and status media access across Android versions -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
-    <!-- Android 13+ (API 33+) granular media permissions for WhatsApp media files -->
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-
-    <!-- Package visibility for launching and reposting to WhatsApp / WhatsApp Business on Android 11+ -->
-    <queries>
-        <package android:name="com.whatsapp" />
-        <package android:name="com.whatsapp.w4b" />
-    </queries>
-
-    <application
-        android:name=".CustomApplication"
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
-
-        <!-- Google AdMob App ID -->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6076352655363840~1882989438" />
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.MyApplication"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <!-- Secure File Provider for sharing & reposting status media starting from Android 10+ -->
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
-    </application>
-
-                </manifest>
+<root>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Privacy Policy for Status Saver</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Application Name: Status Saver</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Package Name: com.sm.status.saver</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Effective Date: November 15</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Developer Contact: shdesai460@gmail.com</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>This Privacy Policy explains how Status Saver ("we"</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>1. Local Media Handling & User Files</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>All WhatsApp and WhatsApp Business status scanning</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>2. Advertising (Google AdMob) & User Consent (UMP)</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Status Saver integrates the Google Mobile Ads SDK (AdMob) and Google's User Messaging Platform (UMP) to display Banner</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Information Processed by Google AdMob: Google and its advertising partners may process device identifiers such as the Google Advertising ID (AD_ID)</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Consent Management: Where required by law (e.g.</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>3. App Permissions & Why They Are Needed</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Storage / Media Read Permissions (READ_MEDIA_IMAGES</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Network & Ad Identifier Permissions (INTERNET</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Package Visibility Queries (com.whatsapp</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>4. Reposting & Sharing</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>When you tap Repost or Share</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>5. Data Retention & Deletion</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>All saved media files remain locally on your device under your control. You may delete saved statuses anytime using the in-app Delete button or your Gallery / File Manager</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>6. Children's Privacy</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Status Saver is not intended for children under 13 and does not knowingly collect personal data from children.</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>7. Contact Us</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>If you have questions regarding this Privacy Policy or Google Play Data Safety compliance</Google_Play_Compliant_Privacy_Policy>
+</row>
+<row>
+<Google_Play_Compliant_Privacy_Policy>Disclaimer: Status Saver is an independent utility tool and is not affiliated with</Google_Play_Compliant_Privacy_Policy>
+</row>
+</root>
